@@ -3,182 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pricing Plans</title>
     <style>
-    .text{
-        background-color:blue;
-        width:600px;
-        height:650px;
-        border-radius: 10px;
-        text-align: center;
-        left:20%;
-        position:absolute;
-    }
-    h2{
-        color:lightsalmon;
-        position:absolute;
-        left:180px;
-        top:50px;
-        text-align: center;
-
-    }
-    span{
-        font-size: 35px;
-        color:blue
-    }
-    h4{
-        text-align: center;
-        color:white;
-        left:240px;
-
-    }
-    
-    .child-one{
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
         
-       width:150px;
-       left:10px;
-       height:190px;
-       top:400px;
-       background-color: white;
-       color:gold;
-       border-radius: 10px;
-       
-    }
+        .text {
+            background-color: blue;
+            width: 600px;
+            height: 650px;
+            border-radius: 10px;
+            text-align: center;
+            padding-top: 30px;
+            color: white;
+            position: relative;
+        }
 
-    h5{
-        top:0%;
-        border:2px solid lightcoral;
-        background-color: lightcoral;
-        color:blue;
-        width:120px;
-        margin:0px;
-        padding:0px 2px ;
-        left:200px;
-        text-transform:uppercase;
-        text-align: center;
-        right:20%;
+        .text h2 {
+            color: lightsalmon;
+            margin-top: 20px;
+        }
 
-    }
-    .child-two{
-        left:200px;
-        background-color: white;
-        color:gold;
-        width:150px;
-        height:400px;
-        top:0px;
-        border-radius: 10px;
-        position:absolute;
-        margin-bottom: 500px;
+        .text h4 {
+            margin-top: 0;
+            color: white;
+        }
 
-    }
-    small{
-        border:2px solid blue;
-        background-color: blue;
-        color:white;
-        top:65%;
-        position:absolute;
-        width:100px;
-        left:20px;
-        border-radius: 10px;
-    }
-    .child-three{
-        left:380px;
-        background-color: white;
-        color:gold;
-        width:150px;
-        height:300px;
-        border-radius: 10px;
-        position:absolute;
-        
+        .parent {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            margin-top: 30px;
 
-    }
-    .parent{
-        display: flex;
-        width:160px;
-        height:300px;
-        background-color: white;
-        text-align: center;
-        column-gap: 20px;
-        row-gap: 20px;
-        position: absolute;
-        left:25%;
-        flex-wrap:wrap;
-        flex-direction:column;
-        top:160px;
-        color:orange;
-        border-radius: 10px;
-        margin-top: 30px;
-       
-    }
-    p{
-        color: blue;
-    }
-    .child-one h2{
-        text-decoration: underline;
-       
-        color:blue;
-        top:70%;
-        position:absolute;
-        width:100px;
-        left:30px;
-        border-radius: 10px;
-        font-size: 15px;
-        text-align: center;
-    }
-    .child-three h2{
-        text-decoration: underline;
-       
-        color:blue;
-        top:70%;
-        position:absolute;
-        width:100px;
-        left:40px;
-        border-radius: 10px;
-        font-size: 15px;
-        text-align: center;
-    }
-    .sym{
-        color:blue;
-    }
-    
-    
+        }
+
+        .child {
+            background-color: white;
+            width: 150px;
+            height: 300px;
+            border-radius: 10px;
+            padding: 20px;
+            color: blue;
+            text-align: center;
+            position: relative;
+            margin: 10px
+        }
+
+        .child h3 {
+            margin-top: 10px;
+        }
+
+        .child .sym {
+            font-size: 25px;
+            margin-top: 10px;
+        }
+
+        .child p {
+            font-size: 14px;
+            margin-top: 20px;
+            color: black;
+        }
+
+        .child h2 {
+            text-decoration: underline;
+            font-size: 15px;
+            margin-top: 30px;
+            color: blue;
+            cursor: pointer;
+        }
+
+        .child h5 {
+            background-color: lightcoral;
+            color: blue;
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120px;
+            padding: 5px;
+            border-radius: 5px;
+            text-transform: uppercase;
+        }
+
+        small {
+            border: 2px solid blue;
+            background-color: blue;
+            color: white;
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        /* Adjustments for specific children */
+        .child-two {
+            height: 340px;
+        }
+
+        .child-three {
+            height: 270px;
+        }
     </style>
 </head>
 <body>
     <div class="text">
         <h4>Start now</h4>
-        <h2>Your plan,your choice</h2>
-    </div>
-    <div class="parent">
-        <div class="child-one">
-          <p>&#128512</p>
-          <h3>starter</h3>  
-         
-          <div class="sym">$
-          <span>49</span></div>
-          <p>no setup fee unlimited products mobile storefront mobile app </p>
-         <h2> <u>Get started</u></h2>
+        <h2>Your plan, your choice</h2>
+        <div class="parent">
+            <div class="child child-one">
+                <p>&#128512;</p>
+                <h3>Starter</h3>
+                <div class="sym">$<span>49</span></div>
+                <p>No setup fee, unlimited products, mobile storefront, mobile app</p>
+                <h2>Get started</h2>
+            </div>
 
+            <div class="child child-two">
+                <h5>Most popular</h5>
+                <p>&#128512;</p>
+                <h3>Personal</h3>
+                <div class="sym">$<span>99</span></div>
+                <p>No setup, unlimited products, mobile storefront, mobile app</p>
+                <small>Get started</small>
+            </div>
+
+            <div class="child child-three">
+                <p>&#128512;</p>
+                <h3>Team</h3>
+                <div class="sym">$<span>299</span></div>
+                <p>No setup, unlimited products, mobile storefront, mobile app</p>
+                <h2>Get started</h2>
+            </div>
         </div>
-     
-        <div class="child-two">
-        <center><h5>Most popular</h5></center>
-          <p>&#128512</p>
-          <h3>personal</h3>
-          <div class="sym">$
-          <span>99</span></div>
-          <p>No setup unlimited products mobile storefront mobile app</p>
-          <small>Get started</small>
-       </div>
-     <div class="child-three">
-
-        <p>&#128512</p>
-        <h3>Team</h3>
-        <div class="sym">$
-       <span>299</span></div>
-        <p>No setup unlimited products mobile storefront mobile app</p>
-        <h2><u>Get started</u></h2>
-
-     </div> 
+    </div>
 </body>
 </html>
